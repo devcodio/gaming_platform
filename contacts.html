@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="container">
+    <span class="logo">Logo</span>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About us</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">News</a></li>
+        <li class="btn"><a href="/contacts.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container hero-contacts">
+    <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <img src="/img/map.png" alt="">
+  </div>
+
+  <div class="feedback">
+    <div class="container">
+      <h2>Say hello</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing.</p>
+      <form>
+        <div class="inline">
+          <div>
+            <label>First Name</label>
+            <input type="text">
+          </div>
+          <div>
+            <label>Last Name</label>
+            <input type="text">
+          </div>
+        </div>
+        <label>Email Address</label>
+        <input type="email" class="one-line">
+        <label>Message</label>
+        <textarea class="one-line"></textarea>
+        <button type="button">Get in touch</button>
+      </form>
+    </div>
+    <img src="/img/vector1.png" class="first-img">
+    <img src="/img/vector2.png" class="second-img">
+  </div>
+
+  <div class="wrapper">
+    <div class="container email">
+      <h3>Lorem Ipsum</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <div class="block">
+        <div>
+          <h4>Stay in the loop</h4>
+          <p>Subscribe to receive the latest news and updates about TDA.
+            We promise not to spam you!</p>
+        </div>
+        <div>
+          <input type="email" name="" id="emailField" placeholder="Enter email address">
+          <button onclick="checkEmail()">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="blocks container">
+      <div>
+        <span class="logo">logo</span>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p>@Logo</p>
+      </div>
+      <div>
+        <h4>About us</h4>
+        <ul>
+          <li>
+            <a href="#">Zeux</a>
+          </li>
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="/contacts.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact us</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <a href="tel:+90889097890">+908 89097 890</a>
+      </div>
+      <div>
+        <div class="links">
+          <a href="#">
+            <img src="img/facebook.svg" alt="Facebook">
+          </a>
+          <a href="#">
+            <img src="img/instagram.svg" alt="Instagram">
+          </a>
+          <a href="#">
+            <img src="img/twitter.svg" alt="Twitter">
+          </a>
+          <a href="#">
+            <img src="img/linkedin.svg" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p>Copyright ® 2021 Lorem All rights Rcerved</p>
+  </footer>
+
+  <script>
+    function checkEmail() {
+      let email = document.querySelector('#emailField').value;
+      if (!email.includes('@')) alert('Without the @ symbol');
+      else if (!email.includes('.')) alert('Without the symbol .');
+      else alert('Success!');
+    }
+  </script>
+</body>
+
+</html>
